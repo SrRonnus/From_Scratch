@@ -1,0 +1,34 @@
+.encabezado {
+    text-align: center;
+}
+.titulos_h4 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+    height: auto;
+    font-size: 30px;
+    padding: 1%;
+    background-color: rgba(131, 211, 200, 0.5);
+}
+.card {
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.oferta {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    text-align: left;
+    margin: 20px;
+    font-size: 17px;
+    max-width: 300px;
+    height: auto;
+    padding: 1%;
+    background-color: rgba(131, 211, 200, 0.5);
+
+}
+
+#encabezado_principal {
+    background-color: aquamarine;
+}
