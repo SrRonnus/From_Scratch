@@ -1,0 +1,63 @@
+#page-main {
+    display: block;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(19, 167, 167);
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mision_vision { 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.mivi {  
+    width: 350px;
+    max-width: 90vw;
+    margin: 0;
+    text-align: justify;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 15px;
+    box-shadow: #222 0px 0px 10px;
+}
+.mivi h2 { 
+    text-align: center; 
+}
+
+@media (max-width: 900px) {
+    .mision_vision {
+        gap: 20px;
+    }
+    .mivi {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .del_menu {
+        width: 55%;
+        padding: 8px;
+        font-size: 16px;
+        margin: 5px 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.616);
+        margin-left: 20%;
+    }
+    .mision_vision {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .mivi {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
