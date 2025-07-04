@@ -1,14 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #103968;
+    padding: 10px 30px;
+    height: 60px;
+}
+#acerca-nosotros {
+    color: #fff;
+    font-size: 34px;
+    margin-left: 20%;
+    margin-top: 0%;
+    margin-block-end: 0%;
+    font-weight: italic;
+}
 #page-main {
     display: block;
     width: 20%;
     text-align: center;
     padding: 10px;
-    background-color: rgb(19, 167, 167);
+    background-color: rgb(255, 255, 255);
     color: #333;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    margin-left: 5px;
     border-radius: 10px;
+}
+#page-main:hover {
+    background-color: #103968;
+    color: #ccc;
+    border-color: #fff;
+    border-style: solid;
 }
 .mision_vision { 
     display: flex;

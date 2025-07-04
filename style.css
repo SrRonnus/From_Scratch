@@ -3,8 +3,11 @@
 body { 
     margin: 0; 
     font-family: Arial, sans-serif; 
-    background: #ffffff; 
+    background: #fff; 
     color: #333; 
+}
+section {
+    margin-left: 0%;
 }
 
 #titulo_principal {
@@ -12,69 +15,64 @@ body {
     font-style: italic;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .del_menu {
     border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.616);
     padding: 10px;
     text-align: center;
 }
-
-
-#elige{
-    font-size: 33px;
-    font-style: italic;
-}
-
 .nav { 
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
     padding: 10px 30px; 
-    background: #fff; 
+    background-color: #032955; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
 .nav .logo { 
     width: auto; 
-    max-width: 100px;
+    max-width: 80px;
     margin-right: 20px;
-    border-radius: 20%;
+    border-radius: 10%;
 }
-.mision_vision { 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 20px 0;
-}
-
-.mivi {  
-    width: 350px;
-    max-width: 90vw;
-    margin: 0;
-    text-align: justify;
-    border-radius: 20px;
-    margin: 2%;
-    padding: 15px;
-    box-shadow: #222 0px 0px 10px;
-}
-.mivi h2 { 
-    text-align: center; 
-}
-
-.nav h1 span { 
-    color: teal; 
+.titulo_principal {
+    font-size: 30px;
+    color: #ccc;
+    margin-left: 20px;
 }
 
 .nav ul { 
     list-style: none; 
     display: flex; 
     gap: 20px; 
+    
 }
 
 .nav ul li a { 
     text-decoration: none; 
-    color: #333; 
+    color: #ffffff;
+    align-items: end; 
+}
+
+.nav ul li:hover { 
+    color: #18a1b9;
+    background-color: #2fafeb; 
+}
+
+#contacto {
+    max-height: min-content;
+}
+
+.linea-separadora {
+    height: 2px;
+    background-color: #000000;
+    margin: 0%;
+    padding: 0%;
 }
 
 .hero { 
@@ -89,14 +87,14 @@ body {
 
 .hero .vr-img { 
     width: 300px; 
-    height: 250px;
+    height: auto;
     max-width: 50%; 
-    border-radius: 5% ;
+    margin-left: 0%;
 }
 
 .hero-text { 
     max-width: 50%; 
-    color: #ffffff;
+    color: #ccc;
     text-align: center; 
 }
 
@@ -126,7 +124,7 @@ body {
     transform: scale(1.1);
     transition: transform 0.3s ease; 
     width: 280px; 
-
+    
 }
 
 .pack:hover { 
@@ -135,11 +133,12 @@ body {
 
 .btn-wsp { 
     display: inline-block; 
-    margin-top: 30px; 
+    margin-top: 50px; 
     padding: 10px 20px; 
     background: #25d366; 
     color: white; 
     text-decoration: none; 
+    font-size: larger;
     border-radius: 20px; 
     font-weight: bold; 
     box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
@@ -158,69 +157,45 @@ footer .social a {
     margin: 5px; 
     color: #ccc; 
     text-decoration: none; }
-
+    
 footer .social a:hover { 
     color: white; }
-
-@media (max-width: 900px) {
-    .mision_vision {
-        gap: 20px;
-    }
-    .mivi {
-        width: 300px;
-    }
-}
+    
 
 @media (max-width: 768px) {
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+        background-color: #1ea099;
+        align-content: center;
+        margin-top: 45px;
+        margin-right: 10%;
+        align-items: center;
+    }
+    .menu-icon:hover {
+        background-color: #0f7a8c;
+    }
     .nav {
         flex-direction: flex-start;
         align-items: flex-start;
         padding: 10px 10px;
     }
     .nav .logo {
-        max-width: 100px;
+        max-width: 80px;
         margin-bottom: 10px;
         align-items: center;
-        margin-left: 30px;
+        margin-left: 20px;
+        margin-top: 4.50% ;
     }
-    .nav ul {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        padding: 0;
-        margin: 0;
+    .nav ul li a {
+        display: none;
     }
     .del_menu {
-        width: 55%;
-        padding: 8px;
-        font-size: 16px;
-        margin: 5px 0;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.616);
-        margin-left: 20%;
+        display: none;
     }
-    #titulo_principal {
-        font-size: 0%;
-    }
-    #elige {
-        font-size: 20px;
-        max-width: 100%;
-    }
-    .hero {
-        
+        .hero {
         padding: 30px 10px;
         text-align: center;
     }
-
-    .mision_vision {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin: 10px 0;
-    }
-    .mivi {
-        width: 80%;
-        margin: 10px 0;
-    }
-    
 
 }
