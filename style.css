@@ -58,7 +58,11 @@ section {
     color: #ffffff;
     align-items: end; 
 }
-
+#elige {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
 .nav ul li:hover { 
     color: #18a1b9;
     background-color: #2fafeb; 
@@ -103,32 +107,25 @@ section {
     margin-bottom: 10px; 
 }
 
-.packs { 
-    text-align: center; 
-    padding: 40px 20px; 
-}
-
-.pack-container { 
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-    gap: 20px; 
-    margin-top: 20px; 
-}
-
-.pack { 
-    background: #fff; 
+.pack1 { 
+    display: flex;
+    justify-content: flex-end;
     padding: 30px; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5); 
-    transform: scale(1.1);
-    transition: transform 0.3s ease; 
     width: 280px; 
-    
+    text-align: start;
+    align-items: end;
 }
-
-.pack:hover { 
-    transform: scale(1.05); 
+.pack2 { 
+    padding: 30px; 
+    width: 280px; 
+    text-align: start;
+    align-items: end;
+}
+.pack3 { 
+    padding: 30px; 
+    width: 280px; 
+    text-align: start;
+    align-items: end;
 }
 
 .btn-wsp { 
