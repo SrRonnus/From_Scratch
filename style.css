@@ -66,7 +66,7 @@ body {
     background-position: center;
 }
 .img-main {
-    background-image: url(imagenes/mundo_digital.webp);
+    background-image: url(images/mundo_digital.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
